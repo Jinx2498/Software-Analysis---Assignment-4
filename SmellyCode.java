@@ -23,7 +23,6 @@ public class SmellyCode extends JPanel {
         //Create and set up the content pane
         JComponent newContentPanel = new SmellyCode();
         
-
         frame.setContentPane(newContentPanel);
         //Display the window.
         frame.pack();
@@ -140,9 +139,9 @@ public class SmellyCode extends JPanel {
         
     }
 
-    void makeAndAddButton(String a) {
+    void makeAndAddButton(int a) {
         
-        if (a == "Move"){
+        if (a == 1){
 
             JButton buttonMove = new JButton("Move");
             buttonMove.addActionListener(new ActionListener(){
@@ -155,7 +154,7 @@ public class SmellyCode extends JPanel {
             });
             buttonPanel.add(buttonMove);
 
-        } else if (a == "Rectangle") {
+        } else if (a == 2) {
 
             JButton buttonNewRect = new JButton("New Rectangle");
             buttonNewRect.addActionListener(new ActionListener(){
@@ -167,7 +166,7 @@ public class SmellyCode extends JPanel {
             });
             buttonPanel.add(buttonNewRect);
 
-        } else if (a == "Oval") {
+        } else if (a == 3) {
 
             JButton buttonNewOval = new JButton("New Oval");
             buttonNewOval.addActionListener(new ActionListener(){
@@ -179,7 +178,7 @@ public class SmellyCode extends JPanel {
             });
             buttonPanel.add(buttonNewOval);
 
-        } else if (a == "Triangle") {
+        } else if (a == 4) {
 
             JButton buttonNewTriangle = new JButton("New Triangle");
             buttonNewTriangle.addActionListener(new ActionListener(){
@@ -191,7 +190,7 @@ public class SmellyCode extends JPanel {
             });
             buttonPanel.add(buttonNewTriangle);
 
-        } else if (a == "Merge") {
+        } else if (a == 5) {
 
             JButton buttonMerge = new JButton("Merge All");
             buttonMerge.addActionListener(new ActionListener(){
@@ -203,7 +202,7 @@ public class SmellyCode extends JPanel {
             });
             buttonPanel.add(buttonMerge);
 
-        } else if (a == "Unmerge") {
+        } else if (a == 6) {
 
             JButton buttonUnmerge = new JButton("Unmerge All");
             buttonUnmerge.addActionListener(new ActionListener(){
@@ -219,24 +218,23 @@ public class SmellyCode extends JPanel {
     }
 
     void createAllButtons() {
-        JPanel buttonPanel = new JPanel(new GridLayout(2, 3));
         
-        String move = "Move";
+        int move = 1;
         makeAndAddButton(move);
 
-        String rectangle = "Rectangle";
+        int rectangle = 2;
         makeAndAddButton(rectangle);
         
-        String oval = "Oval";
+        int oval = 3;
         makeAndAddButton(oval);
 
-        String triangle = "Triangle";
+        int triangle = 4;
         makeAndAddButton(triangle);
 
-        String merge = "Merge";
+        int merge = 5;
         makeAndAddButton(merge);
 
-        String unmerge = "Unmerge";
+        int unmerge = 6;
         makeAndAddButton(unmerge);
 
         add(buttonPanel);
