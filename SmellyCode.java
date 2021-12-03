@@ -190,6 +190,102 @@ public class SmellyCode extends JPanel {
         setPreferredSize(new Dimension(600, 600));
         setBorder(BorderFactory.createEmptyBorder(20,20,20,20));	//Adds a border to the panel
     }
+
+    // void drawing() {
+    //     drawingArea = new DrawingArea();						//Instantiate our blank area
+    //     add(drawingArea);
+
+        //Register for mouse events on drawingArea and the panel.
+        // drawingArea.addMouseListener(new MouseListener(){
+        //     public void mousePressed(MouseEvent e) {				//Mouse pressed event
+        //         eventOutput("Mouse pressed on drawingArea (# of clicks: "				//Fires when the mouse is pushed down
+        //                 + e.getClickCount() + ")");
+        //         drawingArea.setMouseDownPosition(e.getX(), e.getY());
+        //     }
+            
+        //     public void mouseReleased(MouseEvent e) {				//Mouse released event
+        //         eventOutput("Mouse released on drawingArea (# of clicks: "				//Fires when the mouse is released
+        //                 + e.getClickCount() + ")");
+        //         drawingArea.setMouseUpPosition(e.getX(), e.getY());
+        //         drawingArea.repaint();
+        //     }
+            
+        //     public void mouseEntered(MouseEvent e) {				//Mouse entered event
+        //         eventOutput("Mouse entered on drawingArea");						//Fires when the mouse enters the listening component
+        //     }
+            
+        //     public void mouseExited(MouseEvent e) {					//Mouse exited event
+        //         eventOutput("Mouse exited on drawingArea");							//Fires when the mouse exits the listening component
+        //     }
+            
+        //     public void mouseClicked(MouseEvent e) {				//Mouse clicked event
+        //         eventOutput("Mouse clicked on drawingArea (# of clicks: "				//Fires when the mouse is pushed down and released with minimal displacement
+        //                 + e.getClickCount() + ")");						//If there is displacement, it's a drag not a click
+        //     }
+        // });					//Add a mouse listener to the drawingArea
+        
+        // this.addMouseListener(new MouseListener(){
+        //     public void mousePressed(MouseEvent e) {				//Mouse pressed event
+        //         eventOutput("Mouse pressed on panel (# of clicks: "				//Fires when the mouse is pushed down
+        //                 + e.getClickCount() + ")");
+        //     }
+            
+        //     public void mouseReleased(MouseEvent e) {				//Mouse released event
+        //         eventOutput("Mouse released on panel (# of clicks: "				//Fires when the mouse is released
+        //                 + e.getClickCount() + ")");
+        //     }
+            
+        //     public void mouseEntered(MouseEvent e) {				//Mouse entered event
+        //         eventOutput("Mouse entered on panel");						//Fires when the mouse enters the listening component
+        //     }
+            
+        //     public void mouseExited(MouseEvent e) {					//Mouse exited event
+        //         eventOutput("Mouse exited on panel");							//Fires when the mouse exits the listening component
+        //     }
+            
+        //     public void mouseClicked(MouseEvent e) {				//Mouse clicked event
+        //         eventOutput("Mouse clicked on panel (# of clicks: "				//Fires when the mouse is pushed down and released with minimal displacement
+        //                 + e.getClickCount() + ")");						//If there is displacement, it's a drag not a click
+        //     }
+        // });								//Add a mouse listener to this as well
+
+        // drawingArea.addMouseMotionListener(new MouseMotionListener(){
+
+        //     @Override
+        //     public void mouseDragged(MouseEvent e) {
+        //         eventOutput("Mouse dragged on drawingArea (" + e.getXOnScreen() + ", " + e.getYOnScreen() + ")");
+        //     }
+
+        //     @Override
+        //     public void mouseMoved(MouseEvent e) {
+        //         eventOutput("Mouse moved on drawingArea (" + e.getXOnScreen() + ", " + e.getYOnScreen() + ")");
+                
+        //     }
+            
+        // });				//Add a mouse motion listener to the drawingArea
+        
+        // this.addMouseMotionListener(new MouseMotionListener(){
+
+        //     @Override
+        //     public void mouseDragged(MouseEvent e) {
+        //         eventOutput("Mouse dragged on panel (" + e.getXOnScreen() + ", " + e.getYOnScreen() + ")");
+        //     }
+
+        //     @Override
+        //     public void mouseMoved(MouseEvent e) {
+        //         eventOutput("Mouse moved on panel (" + e.getXOnScreen() + ", " + e.getYOnScreen() + ")");
+                
+        //     }
+        // });	
+    // }
+
+    // void text() {
+    //     textArea = new JTextArea();							//Create the text area
+    //     textArea.setEditable(false);
+    // }						//Don't let the user edit the text
+    // void scroll();
+
+    // void buttons();
     
     void eventOutput(String eventDescription) {		//We just forward mouse events to this method
         textArea.append(eventDescription + " detected.\n");
