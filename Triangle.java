@@ -27,10 +27,10 @@ public class Triangle extends AtomicShape{
     // 	this.y = newy + deltaY;
     // }
     
-    public void paint(Graphics g){
-    	g.setColor(color);
-    	g.drawPolygon(new int[] {x, y}, new int[] {x+y, x+y}, height);
-    }
+    // public void paint(Graphics g){
+    // 	g.setColor(color);
+    // 	g.drawPolygon(new int[] {x, y}, new int[] {x+y, x+y}, height);
+    // }
     
     @Override
     public String toString() {

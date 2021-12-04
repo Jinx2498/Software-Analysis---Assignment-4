@@ -27,10 +27,10 @@ public class Oval extends AtomicShape{
     // 	this.y = newy + deltaY;
     // }
     
-    public void paint(Graphics g){
-    	g.setColor(color);
-    	g.drawOval(x, y, width, height);
-    }
+    // public void paint(Graphics g){
+    // 	g.setColor(color);
+    // 	g.drawOval(x, y, width, height);
+    // }
     
     @Override
     public String toString() {
