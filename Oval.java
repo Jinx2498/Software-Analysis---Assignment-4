@@ -8,6 +8,11 @@ public class Oval extends AtomicShape{
 	
 	protected Oval(int x, int y, int width, int height, Color color) {
 		super(x, y, width, height, color);
+		this.x =x;
+		this.y= y;
+		this.width = width;
+		this.height = height;
+		this.color = color;
 	}
     
     // public void move(int buttonDownX, int buttonDownY, int newx, int newy) {
@@ -27,10 +32,10 @@ public class Oval extends AtomicShape{
     // 	this.y = newy + deltaY;
     // }
     
-    // public void paint(Graphics g){
-    // 	g.setColor(color);
-    // 	g.drawOval(x, y, width, height);
-    // }
+    public void paint(Graphics g){
+    	g.setColor(color);
+    	g.drawOval(x, y, width, height);
+    }
     
     @Override
     public String toString() {
