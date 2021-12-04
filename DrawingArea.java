@@ -84,6 +84,7 @@ public class DrawingArea extends JLabel {
 		}
 
     	for (Rectangle s: shapesR){
+
     		s.paint(g);
     	}
 
@@ -104,4 +105,15 @@ public class DrawingArea extends JLabel {
     public State getState() {
     	return state;
     }
+
+	public void mergeAll() {
+
+		// CompositeShape shapes = new CompositeShape();
+
+	}
+
+	public void unmergeAll() {
+
+	}
+
 }
