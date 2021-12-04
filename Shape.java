@@ -2,7 +2,7 @@ import java.awt.Color;
 import java.awt.Graphics;
 
 public abstract class Shape {
-	private Color color;
+	private final Color color;
 
 	protected int x, y, width, height;
 	
